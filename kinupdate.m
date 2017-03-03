@@ -1,4 +1,17 @@
 function newpose = kinupdate(pose, robotpar, ts, time, wheelspeed)
+%This function takes a 
+%   pose: [x,y,theta] in INERTIAL FRAME (column vector)
+%   robotpar [wheel separation, radius right wheel, radius left wheel]
+%   sampletime [ts],
+%   time [time], 
+%   wheelspeed [angular velocity right wheel, angular velocity left wheel]
+% The function returns
+%   newpose [x, y, theta] in the INERTIAL FRAME (row vector)
+%   ---
+%   ---
+%   It is associated with 31388 Adv. Aut. Robots Course
+%   Gruop 8, spring 2017, DTU Electrical Engineering
+%   ---
 
 % Robot Parameters
 w = robotpar(1);
@@ -35,5 +48,3 @@ for i = 1 : time/ts
 end
 
 newpose = newPose;
-
-
