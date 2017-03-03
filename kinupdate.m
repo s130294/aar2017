@@ -48,5 +48,3 @@ for i = 1 : time/ts
 end
 
 newpose = newPose;
-
-
